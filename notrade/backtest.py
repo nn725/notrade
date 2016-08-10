@@ -1,6 +1,8 @@
 import event
 from strategy import strategy
 
+import queue
+
 bars = DataHandler()
 strategy = Strategy()
 portfolio = Portfolio()
@@ -17,7 +19,7 @@ while True:
     while True:
         try:
             event = events.get(False)
-        except Queue.Empty:
+        except queue.Empty:
             break
         else:
             if event is not None:

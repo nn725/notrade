@@ -1,5 +1,5 @@
 import datetime
-import Queue
+import queue
 
 from abc import ABCMeta, abstractmethod
 
